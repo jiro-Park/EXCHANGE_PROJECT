@@ -2,7 +2,7 @@ package javaEx2;
 
 public class OutputClass {
 
-	public void printResultUSD(double result, int USD100, int USD50, int USD20, int USD10, 
+	public void printResultUSD(int result, int USD100, int USD50, int USD20, int USD10, 
 			int USD5, int USD2, int USD1) {
 
 		System.out.println("환전 결과 : " 
@@ -73,7 +73,7 @@ public class OutputClass {
 		                    + exchgWon500 + "개");
 		System.out.println("100원 " 
 		                    + exchgWon100 + "개");
-		System.out.println("50원" 
+		System.out.println("50원 " 
 		                    + exchgWon50 + "개");
 		System.out.println("10원 " 
 		                    + exchgWon10 + "개\n");       // 원화 거스름돈 화폐 수량 출력
@@ -95,8 +95,8 @@ public class OutputClass {
 		System.out.println("외화 보유 잔고가 부족합니다.\n");
 	}
 	public void printBalance() {  //                             은행 외화 잔고 출력
-		System.out.println( "USD : " + ConstValueClass.BALANCE_USD + " 달러\n"
-				          + "EUR : " + ConstValueClass.BALANCE_EUR + " 유로\n"
+		System.out.println( "USD : " + (int)ConstValueClass.BALANCE_USD + " 달러\n"
+				          + "EUR : " + (int)ConstValueClass.BALANCE_EUR + " 유로\n"
 				          + "JPY : " + ConstValueClass.BALANCE_JPY + "만 엔\n");
 	}
 	

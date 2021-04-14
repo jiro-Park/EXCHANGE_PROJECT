@@ -83,8 +83,8 @@ public class RunExchangeClass {
             fwc.saveToFileExchgWon(exchgWon);                                          // 파일에 거스름돈 기록  
             
             
-            ConstValueClass.BALANCE_JPY-=result/10000;                         // result/10000 => 만 엔 단위
-            fwc.saveToFileBalance(ConstValueClass.BALANCE_JPY);                  // 파일에 은행 엔화 잔고를 기록
+            ConstValueClass.BALANCE_JPY-=(double)result/10000;                 // result/10000 => 만 엔 단위
+            fwc.saveToFileBalance(ConstValueClass.BALANCE_JPY);                   // 파일에 은행 엔화 잔고를 기록
 			outClass.printBalance();                             // 잔고가 있을 경우 환전해준 후 남은 외화 잔고를 출력
 		} else {
 			int errorCode = ConstValueClass.ERR_BALANCE_JPY; 
